@@ -1,0 +1,86 @@
+/*
+    FixIE Reset v4
+    ==============
+*/
+
+
+/*noinspection CssRedundantUnit*/
+@media all {
+
+    /* ========================== */
+    /* Fix the margins & padding: */
+    /* ========================== */
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto;
+        overflow-x: hidden;
+        font-size: 11pt;
+        font-weight: 400;
+    }
+    body {
+        position: relative;
+    }
+
+    img {
+        border-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    tr, td {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* ================== */
+    /* Fix bold & italic: */
+    /* ================== */
+
+    b, strong{
+        font-weight: 700;
+        font-variation-settings: "wght" 700;
+    }
+
+    i, em{
+        font-style: italic;
+    }
+
+    u, ins{
+        text-decoration: underline;
+    }
+
+    s, del{
+        text-decoration: line-through;
+    }
+
+    /* ======================= */
+    /* Fix non-breaking space: */
+    /* ======================= */
+
+    .nobr {
+        hyphens: none;
+        white-space: nowrap;
+    }
+    nobr {
+        hyphens: none;
+        white-space: nowrap;
+    }
+
+    /* ============= */
+    /* Add Clearfix: */
+    /* ============= */
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
